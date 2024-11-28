@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+    </style>
+</head>
+<body>
+    
+        <button id="one" onclick="changecolor()">Red</button>
+        <button id="two" onclick="changecolor2()">yellow</button>
+        <button id="three" onclick="changecolor3()">Green</button>
+
+    
+    <script>
+        function changecolor() {
+            let body=document.querySelector("body")
+            let one = document.getElementById("one")
+            body.style.backgroundColor="red";
+        }
+        function changecolor2() {
+            let body=document.querySelector("body")
+            let two = document.getElementById("two")
+            body.style.backgroundColor="yellow";
+        }
+        function changecolor3() {
+            let body=document.querySelector("body")
+            let three = document.getElementById("three")
+            body.style.backgroundColor="green";
+        }
+
+    </script>
+</body>
+</html>
