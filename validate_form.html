@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Registration form</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        td{
+            padding: 10px;
+        }
+    </style>
+    <script>
+        function validateform(){
+            let password = document.forms["registrationform"]["password"].value;
+            let confirmpassword = document.forms["registrationform"]["confirm_password"].value;
+
+            if( password !== confirmpassword){
+                alert("Passwords do not match");
+                return false
+            }
+            return true
+        }
+    </script>
+</head>
+<body>
+    <form name="registrationform" onsubmit="return validateform()" method="post">
+        <table>
+            <tr>
+                <td>username:</td>
+                <td><input type="text" name="username" required></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td>Confirm Password:</td>
+                <td><input type="password" name="confirm_password" required></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Mobile Number:</td>
+                <td><input type="text" name="mobile_number" pattern="\d{10}" title="Mobile number must be 10 digit long." required></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male" required>Male
+                    <input type="radio" name="gender" value="female" required>Female
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
