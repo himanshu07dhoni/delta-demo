@@ -1,0 +1,54 @@
+body{
+    background: rgb(42, 129, 166);
+}
+table{
+    border-radius: 0%;
+    border-color: black;
+    border-style: solid;
+    background-color: rgb(205, 109, 109);
+    border-bottom: 10cap;
+    box-shadow:none; 
+    border-right-color: yellow;
+    border-bottom-color: yellow;
+}
+th{
+    text-align: center;
+}
+tr{
+    text-align: center;
+    font-style: italic;
+    font-size: 100%;
+}
+input{
+    background: rgb(28, 140, 188);
+    border-right-color: yellow;
+    border-bottom-color: yellow;
+    border-radius: 10px;
+    text-align: center;
+    
+    
+}
+textarea{
+    background-color: rgb(41, 144, 187);
+    border-radius: 10%;
+    border-color: yellow;
+    border-right-color: yellow;
+}
+button{
+    background-color: rgb(50, 151, 195);
+    border-color: yellow;
+    border-radius: 20%;
+
+}
+label{
+    color: black;
+
+}
+h1{
+    color: rgb(172, 5, 5);
+    font-weight: normal;
+    
+}
+textarea{
+    position: absolute;
+}

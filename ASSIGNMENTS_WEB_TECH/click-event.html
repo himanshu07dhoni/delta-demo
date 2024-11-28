@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <script type="text/javascript">
+        function calcsum(){
+            value1 = parseInt(document.mainform.textbox1.value);
+            value2 = parseInt(document.mainform.textbox2.value);
+            sum = value1+value2;
+            document.mainform.textboxsum.value=sum;
+        }
+    </script>
+</head>
+<body>
+    <form name="mainform">
+        <input type="text" name="textbox1"><br>
+        <input type="text" name="textbox2"><br>
+        <input type="button" value="process" onclick="javascript:calcsum()"><br>
+        <input type="text" name="textboxsum" readonly="readonly">
+    </form>
+</body>
+</html>
