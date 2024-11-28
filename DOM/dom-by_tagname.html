@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeheading(){
+            var heading = document.getElementsByTagName("h2");
+            for (var i=0; i<heading.length; i++){
+                heading[i].textContent = "Heading Changed!";
+            }
+        }
+        function changecolor(){
+            var list = document.getElementsByTagName("li");
+            for ( var i=0; i< list.length; i++){
+                list[i].style.backgroundColor = "yellow";
+            }
+        }
+        function hideme(){
+            var element = document.getElementsByTagName("div");
+            for (var i=0; i< element.length;i++){
+                element[i].style.display = "none";
+            }
+        }
+        function showme(){
+            var element = document.getElementsByTagName("div");
+            for (var i=0; i< element.length;i++){
+                element[i].style.display = "block";
+            }
+        }
+        function changeborder(){
+            var element = document.getElementsByTagName("p");
+            for (i=0; i<element.length;i++){
+                element[i].style.border = "2px solid black";
+            }
+        }
+        function changespan(){
+            var  spans = document.getElementsByTagName("span");
+            for ( var i=0; i< spans.length; i++){
+                spans[0].style.fontSize="20px"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        
+        <h2>Hello, I am Himanshu Samadhiya!</h2>
+        <h2>Heading 2</h2>
+        <button onclick="changeheading()">Change text!</button>
+        <ul>
+            <li>Himanshu</li>
+            <li>Dhoni</li>
+            <li>Virat</li>
+        </ul>
+    </div>
+    <button onclick="changecolor()">Change BG</button>
+    <button onclick="hideme()">Hide All!</button>
+    <button onclick="showme()">Show All</button>
+    <p>Himanshu Samadhiya</p>
+    <p>Rahul Agrawal</p>
+    <p>Vishnu Kumar</p>
+    <button onclick="changeborder()">Change border</button><br>
+    <span>Kapil sharma</span>
+    <span>Mahendra Singh Dhoni</span><br>
+    <button onclick="changespan()">Change Span</button>
+</body>
+</html>
